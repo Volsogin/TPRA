@@ -77,6 +77,7 @@ class Teacher {
 class Student{
     private String NameS;
 
+
     public void setNameS(String NameS){
         this.NameS = NameS;
     }
