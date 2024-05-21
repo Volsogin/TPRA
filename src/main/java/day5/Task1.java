@@ -1,5 +1,7 @@
 package day5;
 
+import day6.Car;
+
 public class Task1 {
     public static void main(String[] args) {
         Car huananzhi = new Car();
@@ -19,37 +21,10 @@ public class Task1 {
 
 
     }
-}
-class Car {
-    private String model;
-    private String color;
-    private int data;
-    public void setModel(String AutoModel) {
-     model = AutoModel;
-    }
-    public String getModel() {
-        return model;
-    }
-
-    public void setColor(String AutoColor) {
-        color = AutoColor;
-    }
-
-    public String getColor() {
-        return color;
-    }
-    public void setData(int AutoData) {
-        data = AutoData;
-    }
-    public int getData() {
-        return data;
-    }
-
-
-
-
 
 }
+
+
 
 
 
