@@ -1,24 +1,4 @@
-package day6;
-
-public class Task2 {
-    public static void main(String[] args) {
-    Airplane PRP = new Airplane();
-    PRP.setFillUp(1000);
-    PRP.setYear(2020);
-    PRP.setLength(42);
-    PRP.getInfo();
-
-
-
-
-    }
-
-
-
-}
-
-
-
+package day7;
 
 class Airplane {
 
@@ -31,6 +11,9 @@ class Airplane {
     private int fuel = 0;
     private int fillup;
     private String model;
+    private static String compareAirplanes;
+
+
 
     public void setmf(String manufacturer){
         this.manufacturer = manufacturer;
@@ -71,7 +54,9 @@ class Airplane {
     public int getFillup(){
         return fillup;
     }
-
+    public int getLength(){
+        return length;
+    }
 
 
 
@@ -90,11 +75,35 @@ class Airplane {
         this.length = 40;
         this.weight = 20000;
         this.model = "Type S.M.E.H.";
+
+
+
+    }
+
+
+    public static void setcompareAirplanes(int i , int i1 ){
+
+
+        Airplane airplane1 = new Airplane();
+        Airplane airplane2 = new Airplane();
+
+        airplane1.setLength(i);
+        airplane2.setLength(i1);
+
+        if (airplane1.getLength() > airplane2.getLength())
+            compareAirplanes = "Первый самолёт больше второго самолёта.";
+        else if (airplane2.getLength() > airplane1.getLength()) {
+            compareAirplanes = "Второй самолёт больше первого самолёта.";
+        }
+
+
+
+    }
+
+    public static void getCompareAirplanes(){
+        System.out.println(compareAirplanes);
     }
 
 
 
-
-
 }
-
