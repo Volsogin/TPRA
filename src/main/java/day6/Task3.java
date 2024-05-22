@@ -11,7 +11,7 @@ public class Task3 {
         Void.setLesson("Гиперфизикохимическотехнологическая наука");
         Void.evaluate();
         System.out.println("Преподаватель "+ Void.getNameT() + " оценил студента с именем " +
-                Alex.getNameS() + " по предмету "+ Void.getNameT() + " на оценку "+ Void.Mark+"."
+                Alex.getNameS() + " по предмету "+ Void.getLesson() + " на оценку "+ Void.Mark+"."
         );
 
 
