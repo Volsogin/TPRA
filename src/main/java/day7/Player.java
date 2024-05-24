@@ -29,7 +29,11 @@ public class Player {
         int number = MAX_STAMINA - 95 + 1;
         int i = rand.nextInt() % number;
         Pstamina = 95 + i;
-        countplayers++;
+        if(countplayers<7)
+            countplayers++;
+        else if (countplayers >=7)
+            countplayers--;
+
         if(Pstamina <= 0)
             countplayers--;
     }
