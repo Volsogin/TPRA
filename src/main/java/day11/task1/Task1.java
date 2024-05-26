@@ -6,7 +6,6 @@ public class Task1 {
              worker.doWork();
              worker.bonus();
     }
-
     public static void main(String[] args) {
 
         Warehouse Wildberries = new Warehouse();
