@@ -14,15 +14,15 @@ import java.util.Scanner;
 public class Task2 {
     public static void main(String[] args) {
         try {
-            // Создаем и заполняем file1.txt случайными целыми числами
+
             File file1 = new File("file1.txt");
             fillFileWithRandomIntegers(file1, 1000, 0, 100);
 
-            // Создаем file2.txt на основании данных из file1.txt
+
             File file2 = new File("file2.txt");
             createFileWithAverages(file1, file2, 20);
 
-            // Выводим результат
+
             printResult(file2);
         } catch (IOException e) {
             e.printStackTrace();
